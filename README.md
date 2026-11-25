@@ -15,15 +15,17 @@ In this project, I built a small cloud Security Operations Center (SOC) in Micro
 | Component | Name | Purpose |
 |---|---|---|
 | Resource group | `RG-SOC-Lab` | Container for all lab resources |
-| Virtual network and subnet | `vnet-soc-lab` | Network for the honeypot VM |
-| Virtual machine | Windows 11 Pro, `Standard_D2s_v7` | Honeypot exposed to the internet |
-| Network security group | Inbound rule `DANGER-AllowAnyInbound` | Cloud firewall opened to all traffic on purpose |
+| Virtual network and subnet | `VNet-soc-lab` | Network for the honeypot VM |
+| Virtual machine | `CORP-NET-West-1` (Windows 11 Pro, `Standard_D2s_v7`) | Honeypot exposed to the internet |
+| Network security group | `CORP-NET-West-1-nsg` with an allow-any inbound rule | Cloud firewall opened to all traffic on purpose |
 | Log Analytics workspace | `LAW-soc-lab-1` | Central log repository |
-| Data collection rule | Windows Security Events via AMA | Forwards VM security logs to the workspace |
+| Data collection rule | `DCR-Windows` (Windows Security Events via AMA) | Forwards VM security logs to the workspace |
 | Microsoft Sentinel | Connected to `LAW-soc-lab-1` | SIEM for querying, enrichment and the workbook |
 | Watchlist | `geoip` (about 55,000 IP ranges) | Maps IP ranges to city, country and coordinates |
 
 **Region:** Germany West Central
+
+![Deployed resources in RG-SOC-Lab](images/09-resource-group.png)
 
 ## Steps
 
