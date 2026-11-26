@@ -108,6 +108,8 @@ So none of the attackers logged into a real account.
 
 ## What I found (25 November 2026)
 
+The table shows the counts from when I first checked. The map above was captured a few hours later, after the VM had been online longer, so its numbers are higher (the busiest location reached over 12,000 attempts).
+
 | Attacker IP | Location | Failed logins |
 |---|---|---|
 | 80.94.95.83 | Maarn, Netherlands | 7,114 |
