@@ -152,11 +152,11 @@ So none of the attackers logged into a real account.
 
 I stop the VM from the Azure portal when I'm not using it, since shutting down Windows from inside the VM doesn't stop the billing. Everything is in one resource group, so the whole lab can be deleted in one step.
 
-## What's next
+## Ideas for extending this lab
 
-- Create a Sentinel analytics rule that opens an incident for repeated failed logins, and work through one from start to finish.
-- Add a playbook that blocks attacking IPs automatically.
-- Add a Linux VM and compare its attacks (for example SSH brute force) with the Windows ones.
+- A Sentinel analytics rule that opens an incident for repeated failed logins, worked through from start to finish.
+- A playbook that blocks attacking IPs automatically.
+- A Linux VM alongside the Windows one, to compare their attacks (for example SSH brute force).
 
 ## Credits
 
