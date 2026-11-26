@@ -125,7 +125,7 @@ The table shows the counts from when I first checked. The map above was captured
 - **No real account was accessed.** The only "successful" logins from attacking IPs were anonymous logons (see step 7).
 - **A note on the locations:** two IPs show up in two different countries each. That comes from overlapping ranges in the GeoIP list, not from two separate attackers. IP geolocation is approximate, so I wouldn't rely on it alone to say where an attack really came from.
 
-### MITRE ATT&CK
+### MITRE ATT&CK 
 
 | Technique | ID | Why it fits |
 |---|---|---|
